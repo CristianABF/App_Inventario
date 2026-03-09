@@ -67,18 +67,22 @@ class pages():
                     expand=True,   
         )
     column_fill=ft.Container(
-                    bgcolor="#525252",
+                    bgcolor=ft.Colors.GREY_900,
+                    border=ft.Border.all(2, pred_color),
                     padding=20,
-                    expand=True,
+                    width=1772,
+                    height=1000,
+                    border_radius=15,
                     alignment=ft.Alignment.CENTER
         )
     column_a=ft.Container(
             content=ft.Column([images.inventory_image,buttons.home_btn,buttons.search_btn,buttons.table_btn,column_vertical_fill], spacing=0),
             bgcolor="#1a1a1a",
             width=120, #tamaño horizontal
-            height=840, #tamaño vertical
+            height=1000, #tamaño vertical
             border_radius=15,
             expand=False,
+            
         )
     # Contenedor que organiza todo en columnas |a|b|c|
     principal_page=ft.Row(
@@ -87,5 +91,5 @@ class pages():
             column_a,
             # 2do Contenedor (ocupa zona b)
             column_fill
-        ]
+        ],
     )

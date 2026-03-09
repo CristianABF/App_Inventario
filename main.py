@@ -10,6 +10,8 @@ async def main(page: ft.Page):
     page.bgcolor = ft.Colors.GREY_900
     page.window.width = 1200
     page.window.height = 900
+    page.window.maximized=True
+    page.window.full_screen=False
 
     
     page.add(
