@@ -12,7 +12,6 @@ async def main(page: ft.Page):
     page.window.height = 900
     page.window.maximized=True
     page.window.full_screen=False
-
     
     page.add(
         
